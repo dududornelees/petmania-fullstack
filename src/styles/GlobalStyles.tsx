@@ -6,8 +6,16 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;        
         box-sizing: border-box;
+
+        /* Variables */
         --primary-color: #e7ddaa;
         --secondary-color: #523216;
+        --secondary-color-dark: #3f2b0e;
+        --font-large: 22px;
+        --font-medium: 18px;
+        --font-small: 14px;
+        --border-radius: 12px;
+        --transition: all 0.3s ease-in-out;
     }
 
     body {

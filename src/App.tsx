@@ -1,6 +1,6 @@
 import Router from "routes/Router";
 
-import * as G from "styles/GlobalStyles";
+import * as G from "styles";
 
 const App = () => {
     return (

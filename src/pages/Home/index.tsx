@@ -1,5 +1,11 @@
 import { MainTemplate } from "components";
 
+import * as G from "styles";
+
 export const Home = () => {
-    return <MainTemplate>Home!</MainTemplate>;
+    return (
+        <MainTemplate>
+            <G.Container>Home!</G.Container>
+        </MainTemplate>
+    );
 };
