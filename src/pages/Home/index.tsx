@@ -1,3 +1,5 @@
+import { MainTemplate } from "components";
+
 export const Home = () => {
-    return <>Home!</>;
+    return <MainTemplate>Home!</MainTemplate>;
 };
