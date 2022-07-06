@@ -1,4 +1,4 @@
-import { Header } from "components/Header";
+import { Header, Footer } from "components";
 
 type Props = {
     children: React.ReactNode;
@@ -9,6 +9,7 @@ export const MainTemplate = ({ children }: Props) => {
         <>
             <Header />
             {children}
+            <Footer />
         </>
     );
 };
