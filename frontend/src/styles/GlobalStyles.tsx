@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
         /* Variables */
         --primary-color: #e7ddaa;
+        --primary-color-dark: #b09f7f;
         --secondary-color: #523216;
         --secondary-color-dark: #3f2b0e;
         --font-large: 22px;
