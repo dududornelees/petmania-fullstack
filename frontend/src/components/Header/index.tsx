@@ -1,7 +1,13 @@
+import { useState } from "react";
+
 import * as S from "./styles";
 import * as G from "styles";
 
+import { IoMdClose, IoMdMenu } from "react-icons/io";
+
 export const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <S.Header>
             <G.Container>
@@ -16,6 +22,22 @@ export const Header = () => {
                         Adote agora!
                     </S.NavItem>
                 </S.Nav>
+
+                <S.MobileMenu>
+                    {isOpen ? (
+                        <IoMdClose onClick={() => setIsOpen(!isOpen)} />
+                    ) : (
+                        <IoMdMenu onClick={() => setIsOpen(!isOpen)} />
+                    )}
+
+                    <S.NavMobile className={isOpen ? "open" : ""}>
+                        <S.NavMobileItem to="#home">Home</S.NavMobileItem>
+                        <S.NavMobileItem to="#contato">Contato</S.NavMobileItem>
+                        <S.NavMobileItem to="#adote-agora" className="adote-agora">
+                            Adote agora!
+                        </S.NavMobileItem>
+                    </S.NavMobile>
+                </S.MobileMenu>
             </G.Container>
         </S.Header>
     );
