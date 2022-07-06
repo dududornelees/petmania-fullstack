@@ -16,6 +16,12 @@ export const GlobalStyles = createGlobalStyle`
         --font-small: 14px;
         --border-radius: 12px;
         --transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: 768px) {
+            --font-large: 16px;
+            --font-medium: 14px;
+            --font-small: 12px;
+        }
     }
 
     body {
