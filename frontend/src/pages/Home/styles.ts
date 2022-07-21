@@ -7,6 +7,7 @@ export const Banner = styled.img`
     border-radius: var(--border-radius);
     object-fit: cover;
     margin: 25px 0px 50px 0px;
+    box-shadow: var(--box-shadow);
 
     @media screen and (max-width: 768px) {
         height: 150px;
@@ -57,6 +58,7 @@ export const ContactItemInput = styled.input`
     border: none;
     border-radius: var(--border-radius);
     font-size: var(--font-small);
+    box-shadow: var(--box-shadow);
 
     &:focus {
         border: 2px solid var(--primary-color);
@@ -75,6 +77,7 @@ export const Submit = styled.button`
     font-size: var(--font-small);
     border-radius: var(--border-radius);
     transition: var(--transition);
+    box-shadow: var(--box-shadow);
 
     &:hover {
         background-color: var(--primary-color-dark);

@@ -6,6 +6,7 @@ export const Card = styled.div`
     cursor: pointer;
     background-color: #eeeeee;
     border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 `;
 
 export const CardImage = styled.img`
